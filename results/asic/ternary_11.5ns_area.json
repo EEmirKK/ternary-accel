@@ -1,0 +1,13 @@
+{
+  "fill_area_um2": 8679.5744, "fill_count": 4747,
+  "decap_area_um2": 66611.3856, "decap_count": 17746,
+  "tap_area_um2": 3163.0336, "tap_count": 2528,
+  "diode_area_um2": 102.5984, "diode_count": 41,
+  "logic_area_um2": 102381.9424, "logic_count": 8762,
+  "array_logic_area_um2": 18660.3968, "array_logic_count": 1560,
+  "buffer_area_um2": 20354.5216, "buffer_count": 2005,
+  "array_buffer_area_um2": 2192.1024, "array_buffer_count": 219,
+  "core_area_um2": 180938.5344, "die_area_um2": 196273.4340,
+  "core_w_um": 426.420, "core_h_um": 424.320,
+  "instances": 33824
+}

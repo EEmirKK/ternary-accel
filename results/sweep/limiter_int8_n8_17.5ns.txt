@@ -1,0 +1,4 @@
+u_acc (slack 5.32 ns)
+u_acc (slack 5.32 ns)
+PE array (slack 7.44 ns)
+u_rq.a0 (slack 8.03 ns)

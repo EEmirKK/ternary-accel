@@ -1,0 +1,4 @@
+u_acc (slack 7.24 ns)
+u_acc (slack 7.24 ns)
+in_ready (slack 8.08 ns)
+u_rq.sum (slack 8.71 ns)

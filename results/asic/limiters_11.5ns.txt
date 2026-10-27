@@ -1,0 +1,28 @@
+== int8 11.5 ns, nom parasitics, tt_025C_1v80
+  worst slack    1.521 ns  ( 832 endpoints)  u_acc
+  worst slack    2.152 ns  (  35 endpoints)  u_rq.p_lo
+  worst slack    2.347 ns  (  44 endpoints)  u_rq.sum
+  worst slack    2.549 ns  (  35 endpoints)  u_rq.p_hi
+  worst slack    3.662 ns  ( 428 endpoints)  PE array
+  worst slack    3.672 ns  (  72 endpoints)  col_sum
+== int8 11.5 ns, nom parasitics, ss_100C_1v60
+  worst slack   -8.054 ns  ( 832 endpoints)  u_acc
+  worst slack   -7.337 ns  (  44 endpoints)  u_rq.sum
+  worst slack   -6.631 ns  (  35 endpoints)  u_rq.p_lo
+  worst slack   -6.321 ns  (  35 endpoints)  u_rq.p_hi
+  worst slack   -3.907 ns  ( 428 endpoints)  PE array
+  worst slack   -3.793 ns  (   1 endpoints)  net41
+== ternary 11.5 ns, nom parasitics, tt_025C_1v80
+  worst slack    1.237 ns  ( 608 endpoints)  u_acc
+  worst slack    2.713 ns  (  37 endpoints)  u_rq.sum
+  worst slack    2.964 ns  (  28 endpoints)  u_rq.p_hi
+  worst slack    3.173 ns  (  28 endpoints)  u_rq.p_lo
+  worst slack    3.936 ns  (  48 endpoints)  u_skew
+  worst slack    3.940 ns  (  32 endpoints)  a_skewed
+== ternary 11.5 ns, nom parasitics, ss_100C_1v60
+  worst slack   -8.500 ns  ( 608 endpoints)  u_acc
+  worst slack   -5.885 ns  (  37 endpoints)  u_rq.sum
+  worst slack   -5.314 ns  (  28 endpoints)  u_rq.p_hi
+  worst slack   -4.852 ns  (  28 endpoints)  u_rq.p_lo
+  worst slack   -2.319 ns  (  19 endpoints)  u_rq.a0
+  worst slack   -1.925 ns  (   1 endpoints)  net41

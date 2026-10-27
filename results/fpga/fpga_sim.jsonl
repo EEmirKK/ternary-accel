@@ -1,0 +1,4 @@
+{"precision": "int8", "dataset": "fashion", "batch": 8, "cycles": 39657, "act_beats": 25472, "cycles_per_image": 4957.125, "utilisation": 0.6423077892931891, "bit_exact": true}
+{"precision": "int8", "dataset": "fashion", "batch": 3, "cycles": 22977, "act_beats": 9552, "cycles_per_image": 7659.0, "utilisation": 0.4157200678939809, "bit_exact": true}
+{"precision": "ternary", "dataset": "fashion", "batch": 8, "cycles": 30086, "act_beats": 25472, "cycles_per_image": 3760.75, "utilisation": 0.8466396330519178, "bit_exact": true}
+{"precision": "ternary", "dataset": "fashion", "batch": 3, "cycles": 16552, "act_beats": 9552, "cycles_per_image": 5517.333333333333, "utilisation": 0.5770903818269696, "bit_exact": true}

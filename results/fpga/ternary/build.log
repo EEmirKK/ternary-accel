@@ -1,0 +1,630 @@
+TBBmalloc: skip allocation functions replacement in ucrtbase.dll: unknown prologue for function _msize
+Info: *******************************************************************
+Info: Running Quartus Prime Shell
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Copyright (C) 2025  Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, the Altera Quartus Prime License Agreement,
+    Info: the Altera IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Altera and sold by Altera or its authorized distributors.  Please
+    Info: refer to the Altera Software License Subscription Agreements 
+    Info: on the Quartus Prime software download page.
+    Info: Processing started: Mon Oct 26 20:39:11 2026
+Info: Command: quartus_sh --flow compile de0nano -c de0nano
+Info: Quartus(args): compile de0nano -c de0nano
+Info: Project Name = <quartus_work>/ternary/de0nano
+Info: Revision Name = de0nano
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Mon Oct 26 20:39:12 2026
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off de0nano -c de0nano
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file src/acc_bank.v
+    Info (12023): Found entity 1: acc_bank File: <quartus_work>/ternary/src/acc_bank.v Line: 16
+Info (12021): Found 1 design units, including 1 entities, in source file src/accel_top.v
+    Info (12023): Found entity 1: accel_top File: <quartus_work>/ternary/src/accel_top.v Line: 19
+Info (12021): Found 1 design units, including 1 entities, in source file src/deskew.v
+    Info (12023): Found entity 1: deskew File: <quartus_work>/ternary/src/deskew.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file src/pe_int8.v
+    Info (12023): Found entity 1: pe_int8 File: <quartus_work>/ternary/src/pe_int8.v Line: 11
+Info (12021): Found 1 design units, including 1 entities, in source file src/pe_ternary.v
+    Info (12023): Found entity 1: pe_ternary File: <quartus_work>/ternary/src/pe_ternary.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file src/requant.v
+    Info (12023): Found entity 1: requant File: <quartus_work>/ternary/src/requant.v Line: 9
+Info (12021): Found 1 design units, including 1 entities, in source file src/skew.v
+    Info (12023): Found entity 1: skew File: <quartus_work>/ternary/src/skew.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file src/systolic_array.v
+    Info (12023): Found entity 1: systolic_array File: <quartus_work>/ternary/src/systolic_array.v Line: 8
+Info (12021): Found 1 design units, including 1 entities, in source file src/uart_rx.v
+    Info (12023): Found entity 1: uart_rx File: <quartus_work>/ternary/src/uart_rx.v Line: 6
+Info (12021): Found 1 design units, including 1 entities, in source file src/uart_tx.v
+    Info (12023): Found entity 1: uart_tx File: <quartus_work>/ternary/src/uart_tx.v Line: 5
+Info (12021): Found 1 design units, including 1 entities, in source file src/accel_fpga.v
+    Info (12023): Found entity 1: accel_fpga File: <quartus_work>/ternary/src/accel_fpga.v Line: 20
+Info (12021): Found 1 design units, including 1 entities, in source file src/de0nano_top.v
+    Info (12023): Found entity 1: de0nano_top File: <quartus_work>/ternary/src/de0nano_top.v Line: 6
+Info (12127): Elaborating entity "de0nano_top" for the top level hierarchy
+Info (12128): Elaborating entity "accel_fpga" for hierarchy "accel_fpga:u_core" File: <quartus_work>/ternary/src/de0nano_top.v Line: 27
+Warning (10230): Verilog HDL assignment warning at accel_fpga.v(161): truncated value with size 32 to match size of target (11) File: <quartus_work>/ternary/src/accel_fpga.v Line: 161
+Info (10264): Verilog HDL Case Statement information at accel_fpga.v(120): all case item expressions in this case statement are onehot File: <quartus_work>/ternary/src/accel_fpga.v Line: 120
+Warning (10230): Verilog HDL assignment warning at accel_fpga.v(224): truncated value with size 32 to match size of target (11) File: <quartus_work>/ternary/src/accel_fpga.v Line: 224
+Warning (10230): Verilog HDL assignment warning at accel_fpga.v(225): truncated value with size 32 to match size of target (7) File: <quartus_work>/ternary/src/accel_fpga.v Line: 225
+Info (10264): Verilog HDL Case Statement information at accel_fpga.v(243): all case item expressions in this case statement are onehot File: <quartus_work>/ternary/src/accel_fpga.v Line: 243
+Warning (10230): Verilog HDL assignment warning at accel_fpga.v(313): truncated value with size 32 to match size of target (7) File: <quartus_work>/ternary/src/accel_fpga.v Line: 313
+Warning (10230): Verilog HDL assignment warning at accel_fpga.v(314): truncated value with size 32 to match size of target (5) File: <quartus_work>/ternary/src/accel_fpga.v Line: 314
+Info (12128): Elaborating entity "uart_rx" for hierarchy "accel_fpga:u_core|uart_rx:u_rx" File: <quartus_work>/ternary/src/accel_fpga.v Line: 54
+Warning (10230): Verilog HDL assignment warning at uart_rx.v(30): truncated value with size 32 to match size of target (9) File: <quartus_work>/ternary/src/uart_rx.v Line: 30
+Warning (10230): Verilog HDL assignment warning at uart_rx.v(35): truncated value with size 32 to match size of target (9) File: <quartus_work>/ternary/src/uart_rx.v Line: 35
+Info (12128): Elaborating entity "uart_tx" for hierarchy "accel_fpga:u_core|uart_tx:u_tx" File: <quartus_work>/ternary/src/accel_fpga.v Line: 56
+Warning (10230): Verilog HDL assignment warning at uart_tx.v(28): truncated value with size 32 to match size of target (9) File: <quartus_work>/ternary/src/uart_tx.v Line: 28
+Warning (10230): Verilog HDL assignment warning at uart_tx.v(34): truncated value with size 32 to match size of target (9) File: <quartus_work>/ternary/src/uart_tx.v Line: 34
+Info (12128): Elaborating entity "accel_top" for hierarchy "accel_fpga:u_core|accel_top:u_acc" File: <quartus_work>/ternary/src/accel_fpga.v Line: 186
+Warning (10230): Verilog HDL assignment warning at accel_top.v(157): truncated value with size 32 to match size of target (3) File: <quartus_work>/ternary/src/accel_top.v Line: 157
+Warning (10230): Verilog HDL assignment warning at accel_top.v(160): truncated value with size 32 to match size of target (3) File: <quartus_work>/ternary/src/accel_top.v Line: 160
+Info (12128): Elaborating entity "skew" for hierarchy "accel_fpga:u_core|accel_top:u_acc|skew:u_skew" File: <quartus_work>/ternary/src/accel_top.v Line: 260
+Info (12128): Elaborating entity "skew" for hierarchy "accel_fpga:u_core|accel_top:u_acc|skew:g_bskew.u_bskew" File: <quartus_work>/ternary/src/accel_top.v Line: 266
+Info (12128): Elaborating entity "systolic_array" for hierarchy "accel_fpga:u_core|accel_top:u_acc|systolic_array:u_array" File: <quartus_work>/ternary/src/accel_top.v Line: 275
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "a_h" into its bus
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "p_v" into its bus
+Info (12128): Elaborating entity "pe_ternary" for hierarchy "accel_fpga:u_core|accel_top:u_acc|systolic_array:u_array|pe_ternary:g_row[0].g_col[0].g_pe.u_pe" File: <quartus_work>/ternary/src/systolic_array.v Line: 42
+Info (12128): Elaborating entity "deskew" for hierarchy "accel_fpga:u_core|accel_top:u_acc|deskew:u_deskew" File: <quartus_work>/ternary/src/accel_top.v Line: 278
+Info (12128): Elaborating entity "acc_bank" for hierarchy "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc" File: <quartus_work>/ternary/src/accel_top.v Line: 285
+Info (12128): Elaborating entity "requant" for hierarchy "accel_fpga:u_core|accel_top:u_acc|requant:u_rq" File: <quartus_work>/ternary/src/accel_top.v Line: 291
+Info (276014): Found 3 instances of uninferred RAM logic
+    Info (276004): RAM logic "accel_fpga:u_core|fifo" is uninferred due to inappropriate RAM size File: <quartus_work>/ternary/src/accel_fpga.v Line: 202
+    Info (276004): RAM logic "accel_fpga:u_core|l_cfg" is uninferred due to inappropriate RAM size File: <quartus_work>/ternary/src/accel_fpga.v Line: 89
+    Info (276004): RAM logic "accel_fpga:u_core|l_base" is uninferred due to inappropriate RAM size File: <quartus_work>/ternary/src/accel_fpga.v Line: 92
+Info (19000): Inferred 6 megafunctions from design logic
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "accel_fpga:u_core|hid_mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 7
+        Info (286033): Parameter NUMWORDS_A set to 128
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 7
+        Info (286033): Parameter NUMWORDS_B set to 128
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "accel_fpga:u_core|img_mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 11
+        Info (286033): Parameter NUMWORDS_A set to 1568
+        Info (286033): Parameter MAXIMUM_DEPTH set to 256
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 11
+        Info (286033): Parameter NUMWORDS_B set to 1568
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "accel_fpga:u_core|prog_mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 12
+        Info (286033): Parameter NUMWORDS_A set to 3328
+        Info (286033): Parameter MAXIMUM_DEPTH set to 256
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 12
+        Info (286033): Parameter NUMWORDS_B set to 3328
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276029): Inferred altsyncram megafunction from the following design logic: "accel_fpga:u_core|log_mem_rtl_0" 
+        Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
+        Info (286033): Parameter WIDTH_A set to 32
+        Info (286033): Parameter WIDTHAD_A set to 5
+        Info (286033): Parameter NUMWORDS_A set to 24
+        Info (286033): Parameter WIDTH_B set to 32
+        Info (286033): Parameter WIDTHAD_B set to 5
+        Info (286033): Parameter NUMWORDS_B set to 24
+        Info (286033): Parameter ADDRESS_ACLR_A set to NONE
+        Info (286033): Parameter OUTDATA_REG_B set to UNREGISTERED
+        Info (286033): Parameter ADDRESS_ACLR_B set to NONE
+        Info (286033): Parameter OUTDATA_ACLR_B set to NONE
+        Info (286033): Parameter ADDRESS_REG_B set to CLOCK0
+        Info (286033): Parameter INDATA_ACLR_A set to NONE
+        Info (286033): Parameter WRCONTROL_ACLR_A set to NONE
+        Info (286033): Parameter READ_DURING_WRITE_MODE_MIXED_PORTS set to OLD_DATA
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "accel_fpga:u_core|accel_top:u_acc|skew:u_skew|g_row[3].sr_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 4
+        Info (286033): Parameter WIDTH set to 8
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "accel_fpga:u_core|accel_top:u_acc|deskew:u_deskew|g_col[0].g_dly.sr_rtl_0"
+        Info (286033): Parameter NUMBER_OF_TAPS set to 1
+        Info (286033): Parameter TAP_DISTANCE set to 3
+        Info (286033): Parameter WIDTH set to 19
+Info (278001): Inferred 9 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|Mult0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 161
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|Mult1" File: <quartus_work>/ternary/src/accel_fpga.v Line: 224
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|Mult2" File: <quartus_work>/ternary/src/accel_fpga.v Line: 337
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "accel_fpga:u_core|Div0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 149
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "accel_fpga:u_core|Mod0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 146
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|accel_top:u_acc|requant:u_rq|Mult0" File: <quartus_work>/ternary/src/requant.v Line: 51
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|Mult0" File: <quartus_work>/ternary/src/acc_bank.v Line: 39
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|Mult1" File: <quartus_work>/ternary/src/acc_bank.v Line: 80
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "accel_fpga:u_core|accel_top:u_acc|requant:u_rq|Mult1" File: <quartus_work>/ternary/src/requant.v Line: 52
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|altsyncram:hid_mem_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|altsyncram:hid_mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "7"
+    Info (12134): Parameter "NUMWORDS_A" = "128"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "7"
+    Info (12134): Parameter "NUMWORDS_B" = "128"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_uvg1.tdf
+    Info (12023): Found entity 1: altsyncram_uvg1 File: <quartus_work>/ternary/db/altsyncram_uvg1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|altsyncram:img_mem_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|altsyncram:img_mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "11"
+    Info (12134): Parameter "NUMWORDS_A" = "1568"
+    Info (12134): Parameter "MAXIMUM_DEPTH" = "256"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "11"
+    Info (12134): Parameter "NUMWORDS_B" = "1568"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ipi1.tdf
+    Info (12023): Found entity 1: altsyncram_ipi1 File: <quartus_work>/ternary/db/altsyncram_ipi1.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_qsa.tdf
+    Info (12023): Found entity 1: decode_qsa File: <quartus_work>/ternary/db/decode_qsa.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_nob.tdf
+    Info (12023): Found entity 1: mux_nob File: <quartus_work>/ternary/db/mux_nob.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|altsyncram:prog_mem_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|altsyncram:prog_mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "12"
+    Info (12134): Parameter "NUMWORDS_A" = "3328"
+    Info (12134): Parameter "MAXIMUM_DEPTH" = "256"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "12"
+    Info (12134): Parameter "NUMWORDS_B" = "3328"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_cpi1.tdf
+    Info (12023): Found entity 1: altsyncram_cpi1 File: <quartus_work>/ternary/db/altsyncram_cpi1.tdf Line: 32
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_8ua.tdf
+    Info (12023): Found entity 1: decode_8ua File: <quartus_work>/ternary/db/decode_8ua.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5qb.tdf
+    Info (12023): Found entity 1: mux_5qb File: <quartus_work>/ternary/db/mux_5qb.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|altsyncram:log_mem_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|altsyncram:log_mem_rtl_0" with the following parameter:
+    Info (12134): Parameter "OPERATION_MODE" = "DUAL_PORT"
+    Info (12134): Parameter "WIDTH_A" = "32"
+    Info (12134): Parameter "WIDTHAD_A" = "5"
+    Info (12134): Parameter "NUMWORDS_A" = "24"
+    Info (12134): Parameter "WIDTH_B" = "32"
+    Info (12134): Parameter "WIDTHAD_B" = "5"
+    Info (12134): Parameter "NUMWORDS_B" = "24"
+    Info (12134): Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info (12134): Parameter "OUTDATA_REG_B" = "UNREGISTERED"
+    Info (12134): Parameter "ADDRESS_ACLR_B" = "NONE"
+    Info (12134): Parameter "OUTDATA_ACLR_B" = "NONE"
+    Info (12134): Parameter "ADDRESS_REG_B" = "CLOCK0"
+    Info (12134): Parameter "INDATA_ACLR_A" = "NONE"
+    Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
+    Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_gsg1.tdf
+    Info (12023): Found entity 1: altsyncram_gsg1 File: <quartus_work>/ternary/db/altsyncram_gsg1.tdf Line: 28
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|skew:u_skew|altshift_taps:g_row[3].sr_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|accel_top:u_acc|skew:u_skew|altshift_taps:g_row[3].sr_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "4"
+    Info (12134): Parameter "WIDTH" = "8"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_u4m.tdf
+    Info (12023): Found entity 1: shift_taps_u4m File: <quartus_work>/ternary/db/shift_taps_u4m.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_0b81.tdf
+    Info (12023): Found entity 1: altsyncram_0b81 File: <quartus_work>/ternary/db/altsyncram_0b81.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_4pf.tdf
+    Info (12023): Found entity 1: cntr_4pf File: <quartus_work>/ternary/db/cntr_4pf.tdf Line: 26
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|deskew:u_deskew|altshift_taps:g_col[0].g_dly.sr_rtl_0"
+Info (12133): Instantiated megafunction "accel_fpga:u_core|accel_top:u_acc|deskew:u_deskew|altshift_taps:g_col[0].g_dly.sr_rtl_0" with the following parameter:
+    Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
+    Info (12134): Parameter "TAP_DISTANCE" = "3"
+    Info (12134): Parameter "WIDTH" = "19"
+Info (12021): Found 1 design units, including 1 entities, in source file db/shift_taps_f6m.tdf
+    Info (12023): Found entity 1: shift_taps_f6m File: <quartus_work>/ternary/db/shift_taps_f6m.tdf Line: 29
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9l31.tdf
+    Info (12023): Found entity 1: altsyncram_9l31 File: <quartus_work>/ternary/db/altsyncram_9l31.tdf Line: 28
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_24e.tdf
+    Info (12023): Found entity 1: add_sub_24e File: <quartus_work>/ternary/db/add_sub_24e.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_6pf.tdf
+    Info (12023): Found entity 1: cntr_6pf File: <quartus_work>/ternary/db/cntr_6pf.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ogc.tdf
+    Info (12023): Found entity 1: cmpr_ogc File: <quartus_work>/ternary/db/cmpr_ogc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 161
+Info (12133): Instantiated megafunction "accel_fpga:u_core|lpm_mult:Mult0" with the following parameter: File: <quartus_work>/ternary/src/accel_fpga.v Line: 161
+    Info (12134): Parameter "LPM_WIDTHA" = "8"
+    Info (12134): Parameter "LPM_WIDTHB" = "8"
+    Info (12134): Parameter "LPM_WIDTHP" = "16"
+    Info (12134): Parameter "LPM_WIDTHR" = "16"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_lgh.tdf
+    Info (12023): Found entity 1: add_sub_lgh File: <quartus_work>/ternary/db/add_sub_lgh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_mult:Mult2" File: <quartus_work>/ternary/src/accel_fpga.v Line: 337
+Info (12133): Instantiated megafunction "accel_fpga:u_core|lpm_mult:Mult2" with the following parameter: File: <quartus_work>/ternary/src/accel_fpga.v Line: 337
+    Info (12134): Parameter "LPM_WIDTHA" = "4"
+    Info (12134): Parameter "LPM_WIDTHB" = "16"
+    Info (12134): Parameter "LPM_WIDTHP" = "20"
+    Info (12134): Parameter "LPM_WIDTHR" = "20"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "6"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_hbt.tdf
+    Info (12023): Found entity 1: mult_hbt File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 29
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_divide:Div0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 149
+Info (12133): Instantiated megafunction "accel_fpga:u_core|lpm_divide:Div0" with the following parameter: File: <quartus_work>/ternary/src/accel_fpga.v Line: 149
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ghm.tdf
+    Info (12023): Found entity 1: lpm_divide_ghm File: <quartus_work>/ternary/db/lpm_divide_ghm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_8kh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_8kh File: <quartus_work>/ternary/db/sign_div_unsign_8kh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_44f.tdf
+    Info (12023): Found entity 1: alt_u_div_44f File: <quartus_work>/ternary/db/alt_u_div_44f.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: <quartus_work>/ternary/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: <quartus_work>/ternary/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|lpm_divide:Mod0" File: <quartus_work>/ternary/src/accel_fpga.v Line: 146
+Info (12133): Instantiated megafunction "accel_fpga:u_core|lpm_divide:Mod0" with the following parameter: File: <quartus_work>/ternary/src/accel_fpga.v Line: 146
+    Info (12134): Parameter "LPM_WIDTHN" = "5"
+    Info (12134): Parameter "LPM_WIDTHD" = "4"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_j9m.tdf
+    Info (12023): Found entity 1: lpm_divide_j9m File: <quartus_work>/ternary/db/lpm_divide_j9m.tdf Line: 25
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|requant:u_rq|lpm_mult:Mult0" File: <quartus_work>/ternary/src/requant.v Line: 51
+Info (12133): Instantiated megafunction "accel_fpga:u_core|accel_top:u_acc|requant:u_rq|lpm_mult:Mult0" with the following parameter: File: <quartus_work>/ternary/src/requant.v Line: 51
+    Info (12134): Parameter "LPM_WIDTHA" = "19"
+    Info (12134): Parameter "LPM_WIDTHB" = "9"
+    Info (12134): Parameter "LPM_WIDTHP" = "28"
+    Info (12134): Parameter "LPM_WIDTHR" = "28"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "SIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_t4t.tdf
+    Info (12023): Found entity 1: mult_t4t File: <quartus_work>/ternary/db/mult_t4t.tdf Line: 31
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" File: <quartus_work>/ternary/src/acc_bank.v Line: 39
+Info (12133): Instantiated megafunction "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" with the following parameter: File: <quartus_work>/ternary/src/acc_bank.v Line: 39
+    Info (12134): Parameter "LPM_WIDTHA" = "5"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "10"
+    Info (12134): Parameter "LPM_WIDTHR" = "10"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_bfh.tdf
+    Info (12023): Found entity 1: add_sub_bfh File: <quartus_work>/ternary/db/add_sub_bfh.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult0" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1" File: <quartus_work>/ternary/src/acc_bank.v Line: 80
+Info (12133): Instantiated megafunction "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1" with the following parameter: File: <quartus_work>/ternary/src/acc_bank.v Line: 80
+    Info (12134): Parameter "LPM_WIDTHA" = "2"
+    Info (12134): Parameter "LPM_WIDTHB" = "5"
+    Info (12134): Parameter "LPM_WIDTHP" = "7"
+    Info (12134): Parameter "LPM_WIDTHR" = "7"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1|multcore:mult_core", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1|altshift:external_latency_ffs", which is child of megafunction instantiation "accel_fpga:u_core|accel_top:u_acc|acc_bank:u_acc|lpm_mult:Mult1" File: c:/altera_lite/25.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le3a[17]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 41
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le5a[16]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 43
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le5a[12]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 43
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following LCELL buffer node(s):
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le3a[16]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 41
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le4a[17]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 42
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le4a[16]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 42
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le4a[15]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 42
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le4a[14]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 42
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le5a[15]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 43
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le5a[14]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 43
+        Warning (14320): Synthesized away node "accel_fpga:u_core|lpm_mult:Mult2|mult_hbt:auto_generated|le5a[13]" File: <quartus_work>/ternary/db/mult_hbt.tdf Line: 43
+Info (13014): Ignored 138 buffer(s)
+    Info (13016): Ignored 4 CARRY_SUM buffer(s)
+    Info (13019): Ignored 134 SOFT buffer(s)
+Info (13000): Registers with preset signals will power-up high File: <quartus_work>/ternary/src/uart_tx.v Line: 14
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "LED[4]" is stuck at GND File: <quartus_work>/ternary/src/de0nano_top.v Line: 14
+    Warning (13410): Pin "LED[5]" is stuck at GND File: <quartus_work>/ternary/src/de0nano_top.v Line: 14
+    Warning (13410): Pin "LED[6]" is stuck at GND File: <quartus_work>/ternary/src/de0nano_top.v Line: 14
+    Warning (13410): Pin "LED[7]" is stuck at GND File: <quartus_work>/ternary/src/de0nano_top.v Line: 14
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 72 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "KEY[1]" File: <quartus_work>/ternary/src/de0nano_top.v Line: 10
+Info (21057): Implemented 6254 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 5504 logic cells
+    Info (21064): Implemented 731 RAM segments
+    Info (21062): Implemented 6 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 33 warnings
+    Info: Peak virtual memory: 4943 megabytes
+    Info: Processing ended: Mon Oct 26 20:39:33 2026
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:31
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Mon Oct 26 20:39:34 2026
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off de0nano -c de0nano
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = de0nano
+Info: Revision = de0nano
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (119006): Selected device EP4CE22F17C6 for design "de0nano"
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (171003): Fitter is performing an Auto Fit compilation, which may decrease Fitter effort to reduce compilation time
+Warning (292013): Feature LogicLock is only available with a valid subscription license. You can purchase a software subscription to gain full access to this feature.
+Info (176444): Device migration not selected. If you intend to use device migration later, you may need to change the pin assignments as they may be incompatible with other devices
+    Info (176445): Device EP4CE10F17C6 is compatible
+    Info (176445): Device EP4CE6F17C6 is compatible
+    Info (176445): Device EP4CE15F17C6 is compatible
+Info (169124): Fitter converted 5 user pins into dedicated programming pins
+    Info (169125): Pin ~ALTERA_ASDO_DATA1~ is reserved at location C1
+    Info (169125): Pin ~ALTERA_FLASH_nCE_nCSO~ is reserved at location D2
+    Info (169125): Pin ~ALTERA_DCLK~ is reserved at location H1
+    Info (169125): Pin ~ALTERA_DATA0~ is reserved at location H2
+    Info (169125): Pin ~ALTERA_nCEO~ is reserved at location F16
+Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
+Info (176045): Design uses memory blocks. Violating setup or hold times of memory block address registers for either read or write operations could cause memory contents to be corrupted. Make sure that all memory block address registers meet the setup and hold time requirements.
+Info (332104): Reading SDC File: 'de0nano.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
+Info (332129): Detected timing requirements -- optimizing circuit to achieve only the specified requirements
+Info (332111): Found 1 clocks
+    Info (332111):   Period   Clock Name
+    Info (332111): ======== ============
+    Info (332111):   20.000     CLOCK_50
+Info (176353): Automatically promoted node CLOCK_50~input (placed in PIN R8 (CLK15, DIFFCLK_6p)) File: <quartus_work>/ternary/src/de0nano_top.v Line: 9
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G18
+Info (176353): Automatically promoted node rst_sync[1]  File: <quartus_work>/ternary/src/de0nano_top.v Line: 19
+    Info (176355): Automatically promoted destinations to use location or clock signal Global Clock
+    Info (176356): Following destination nodes may be non-global or may not use global or regional clocks
+        Info (176357): Destination node accel_fpga:u_core|fifo~72 File: <quartus_work>/ternary/src/accel_fpga.v Line: 202
+        Info (176357): Destination node accel_fpga:u_core|fifo~73 File: <quartus_work>/ternary/src/accel_fpga.v Line: 202
+        Info (176357): Destination node accel_fpga:u_core|tx_data[7]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 344
+        Info (176357): Destination node accel_fpga:u_core|l_mt[0][15]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 114
+        Info (176357): Destination node accel_fpga:u_core|pend_const[0]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 232
+        Info (176357): Destination node accel_fpga:u_core|rword[7]~2 File: <quartus_work>/ternary/src/accel_fpga.v Line: 344
+        Info (176357): Destination node accel_fpga:u_core|prog_wd[0]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 114
+        Info (176357): Destination node accel_fpga:u_core|hid_wd[0]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 305
+        Info (176357): Destination node accel_fpga:u_core|img_wd[0]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 114
+        Info (176357): Destination node accel_fpga:u_core|log_wd[0]~0 File: <quartus_work>/ternary/src/accel_fpga.v Line: 305
+Info (176233): Starting register packing
+Info (176235): Finished register packing
+    Extra Info (176218): Packed 32 registers into blocks of type Embedded multiplier block
+    Extra Info (176220): Created 16 register duplicates
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
+Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
+Info (170189): Fitter placement preparation operations beginning
+Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:01
+Info (170191): Fitter placement operations beginning
+Info (170137): Fitter placement was successful
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:04
+Info (170193): Fitter routing operations beginning
+Info (170195): Router estimated average interconnect usage is 8% of the available device resources
+    Info (170196): Router estimated peak interconnect usage is 27% of the available device resources in the region that extends from location X21_Y11 to location X31_Y22
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:03
+Info (11888): Total time spent on timing analysis during the Fitter is 2.54 seconds.
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Warning (169177): 4 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing Cyclone IV E Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+    Info (169178): Pin KEY[1] uses I/O standard 3.3-V LVTTL at E1 File: <quartus_work>/ternary/src/de0nano_top.v Line: 10
+    Info (169178): Pin CLOCK_50 uses I/O standard 3.3-V LVTTL at R8 File: <quartus_work>/ternary/src/de0nano_top.v Line: 9
+    Info (169178): Pin KEY[0] uses I/O standard 3.3-V LVTTL at J15 File: <quartus_work>/ternary/src/de0nano_top.v Line: 10
+    Info (169178): Pin UART_RXD uses I/O standard 3.3-V LVTTL at C3 File: <quartus_work>/ternary/src/de0nano_top.v Line: 11
+Info (144001): Generated suppressed messages file <quartus_work>/ternary/output_files/de0nano.fit.smsg
+Info: Quartus Prime Fitter was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 6622 megabytes
+    Info: Processing ended: Mon Oct 26 20:39:50 2026
+    Info: Elapsed time: 00:00:16
+    Info: Total CPU time (on all processors): 00:00:28
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Mon Oct 26 20:39:51 2026
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off de0nano -c de0nano
+Info (115031): Writing out detailed assembly data for power analysis
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4783 megabytes
+    Info: Processing ended: Mon Oct 26 20:39:52 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+Info (293026): Skipped module Power Analyzer due to the assignment FLOW_ENABLE_POWER_ANALYZER
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+    Info: Processing started: Mon Oct 26 20:39:53 2026
+Info: Command: quartus_sta de0nano -c de0nano
+Info: qsta_default_script.tcl version: #1
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (332104): Reading SDC File: 'de0nano.sdc'
+Info (332151): Clock uncertainty is not calculated until you update the timing netlist.
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow 1200mV 85C Model
+Info (332146): Worst-case setup slack is 3.569
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.569               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.282
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.282               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 15.518
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    15.518               0.000 CLOCK_50 
+Info (332146): Worst-case removal slack is 3.515
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.515               0.000 CLOCK_50 
+Info (332146): Worst-case minimum pulse width slack is 9.408
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.408               0.000 CLOCK_50 
+Info (332114): Report Metastability: Found 2 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 2
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 33.777 ns
+Info: Analyzing Slow 1200mV 0C Model
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 5.307
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     5.307               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.283
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.283               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 15.992
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    15.992               0.000 CLOCK_50 
+Info (332146): Worst-case removal slack is 3.166
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     3.166               0.000 CLOCK_50 
+Info (332146): Worst-case minimum pulse width slack is 9.428
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.428               0.000 CLOCK_50 
+Info (332114): Report Metastability: Found 2 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 2
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 34.340 ns
+Info: Analyzing Fast 1200mV 0C Model
+Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332146): Worst-case setup slack is 10.300
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    10.300               0.000 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.131
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     0.131               0.000 CLOCK_50 
+Info (332146): Worst-case recovery slack is 17.303
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    17.303               0.000 CLOCK_50 
+Info (332146): Worst-case removal slack is 2.023
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     2.023               0.000 CLOCK_50 
+Info (332146): Worst-case minimum pulse width slack is 9.206
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):     9.206               0.000 CLOCK_50 
+Info (332114): Report Metastability: Found 2 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 2
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 36.362 ns
+Info (332101): Design is fully constrained for setup requirements
+Info (332101): Design is fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 5020 megabytes
+    Info: Processing ended: Mon Oct 26 20:39:56 2026
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:04
+Info (293000): Quartus Prime Full Compilation was successful. 0 errors, 36 warnings
+Info (23030): Evaluation of Tcl script c:/altera_lite/25.1std/quartus/common/tcl/internal/qsh_flow.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 36 warnings
+    Info: Peak virtual memory: 4826 megabytes
+    Info: Processing ended: Mon Oct 26 20:39:57 2026
+    Info: Elapsed time: 00:00:46
+    Info: Total CPU time (on all processors): 00:01:12

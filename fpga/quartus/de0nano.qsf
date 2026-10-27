@@ -1,0 +1,43 @@
+# Quartus Prime Lite project for the DE0-Nano (Cyclone IV E EP4CE22F17C6).
+# Sources are copied next to this file by fpga/quartus/build.sh.
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY de0nano_top
+set_global_assignment -name SDC_FILE de0nano.sdc
+set_global_assignment -name VERILOG_FILE src/acc_bank.v
+set_global_assignment -name VERILOG_FILE src/accel_top.v
+set_global_assignment -name VERILOG_FILE src/deskew.v
+set_global_assignment -name VERILOG_FILE src/pe_int8.v
+set_global_assignment -name VERILOG_FILE src/pe_ternary.v
+set_global_assignment -name VERILOG_FILE src/requant.v
+set_global_assignment -name VERILOG_FILE src/skew.v
+set_global_assignment -name VERILOG_FILE src/systolic_array.v
+set_global_assignment -name VERILOG_FILE src/uart_rx.v
+set_global_assignment -name VERILOG_FILE src/uart_tx.v
+set_global_assignment -name VERILOG_FILE src/accel_fpga.v
+set_global_assignment -name VERILOG_FILE src/de0nano_top.v
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name NUM_PARALLEL_PROCESSORS ALL
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+
+# the precision of this build, which build.sh sets per build
+set_parameter -name TERNARY 0
+
+# Pins from the DE0-Nano user manual. Check these against your board's manual before programming.
+set_location_assignment PIN_R8  -to CLOCK_50
+set_location_assignment PIN_J15 -to KEY[0]
+set_location_assignment PIN_E1  -to KEY[1]
+set_location_assignment PIN_A15 -to LED[0]
+set_location_assignment PIN_A13 -to LED[1]
+set_location_assignment PIN_B13 -to LED[2]
+set_location_assignment PIN_A11 -to LED[3]
+set_location_assignment PIN_D1  -to LED[4]
+set_location_assignment PIN_F3  -to LED[5]
+set_location_assignment PIN_B1  -to LED[6]
+set_location_assignment PIN_L3  -to LED[7]
+# UART on the GPIO-0 header (JP1): GPIO_0_D[0] = board TX, GPIO_0_D[1] = board RX
+set_location_assignment PIN_D3  -to UART_TXD
+set_location_assignment PIN_C3  -to UART_RXD
+set_instance_assignment -name WEAK_PULL_UP_RESISTOR ON -to UART_RXD

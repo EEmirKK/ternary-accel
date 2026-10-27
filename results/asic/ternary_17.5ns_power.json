@@ -1,0 +1,100 @@
+{
+  "groups": {
+    "sequential": {
+      "internal_w": 0.003034098307,
+      "switching_w": 5.696614244e-05,
+      "leakage_w": 1.109838088e-08,
+      "total_w": 0.00309107569
+    },
+    "combinational": {
+      "internal_w": 0.0005181533634,
+      "switching_w": 0.0006029102369,
+      "leakage_w": 2.955458633e-08,
+      "total_w": 0.00112109317
+    },
+    "clock": {
+      "internal_w": 0.001074699336,
+      "switching_w": 0.001082187635,
+      "leakage_w": 5.903664047e-08,
+      "total_w": 0.00215694611
+    },
+    "macro": {
+      "internal_w": 0.0,
+      "switching_w": 0.0,
+      "leakage_w": 0.0,
+      "total_w": 0.0
+    },
+    "pad": {
+      "internal_w": 0.0,
+      "switching_w": 0.0,
+      "leakage_w": 0.0,
+      "total_w": 0.0
+    },
+    "total": {
+      "internal_w": 0.00462694047,
+      "switching_w": 0.001742062974,
+      "leakage_w": 9.968957926e-08,
+      "total_w": 0.006369103212
+    }
+  },
+  "total_w": 0.006369103212,
+  "dynamic_w": 0.006369003444,
+  "leakage_w": 9.968957926e-08,
+  "array": {
+    "internal_w": 0.0008392910897826208,
+    "switching_w": 0.00011289675373121912,
+    "leakage_w": 7.766108514980363e-09,
+    "total_w": 0.0009521956188959165,
+    "cells": 1560,
+    "dynamic_w": 0.0009521878435138399
+  },
+  "annotation": {
+    "pins_annotated": 29224,
+    "pins_unannotated": 0
+  },
+  "e2e": {
+    "dataset": "fashion",
+    "precision": "ternary",
+    "images": 8,
+    "bit_exact": true,
+    "hw_correct": 8,
+    "ties": 0,
+    "first_predictions": [
+      9,
+      2,
+      1,
+      1,
+      6,
+      1,
+      4,
+      6
+    ],
+    "first_labels": [
+      9,
+      2,
+      1,
+      1,
+      6,
+      1,
+      4,
+      6,
+      5,
+      7,
+      4,
+      5,
+      7,
+      3,
+      4,
+      1
+    ],
+    "sim_time_ns": 858900,
+    "stream_cycles": 49073,
+    "clk_ps": 17500,
+    "gate_level": true,
+    "zero_skip": false
+  },
+  "vcd_time_s": 0.0008589,
+  "energy_per_image_total_j": 6.838028435983501e-07,
+  "energy_per_image_dynamic_j": 6.8379213225645e-07,
+  "group_sum_check": 1.8460997739370413e-06
+}

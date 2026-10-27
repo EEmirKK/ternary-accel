@@ -1,0 +1,42 @@
+# LibreLane configuration for the int8 build at N=16, for the size sweep. It differs from
+# int8.yaml only in N.
+# 17.5 ns is the clock of every published run. flow/harden.sh also passes the period
+# on the command line, which takes precedence, so both builds always share it.
+DESIGN_NAME: accel_top
+VERILOG_FILES: dir::../rtl/*.v
+SYNTH_PARAMETERS:
+  - N=16
+  - TERNARY=0
+  - B_MAX=8
+  - K_MAX=784
+CLOCK_PORT: clk
+CLOCK_PERIOD: 17.5
+
+# Keep the PE array as its own block so its area can be read after routing. The match
+# is by instance, because Yosys renames parameterised modules.
+SYNTH_KEEP_HIERARCHY_INSTANCES:
+  - accel_top/u_array
+# The kept array counts as one unmapped cell, which would stop the flow here.
+# flow/area.tcl checks instead that every routed instance is a standard cell.
+ERROR_ON_UNMAPPED_CELLS: false
+
+# The core is sized from the cell area, the same rule for every build.
+FP_SIZING: relative
+FP_CORE_UTIL: 45
+
+# Repair slew, capacitance and timing again after global routing.
+RUN_POST_GRT_DESIGN_REPAIR: true
+RUN_POST_GRT_RESIZER_TIMING: true
+# Signoff checks setup at the typical corners and hold at all corners, so the
+# resizer works at the typical and fast corners only. Slow-corner setup isn't
+# required, and slow-corner hold is still checked at signoff.
+RSZ_CORNERS:
+  - nom_tt_025C_1v80
+  - min_tt_025C_1v80
+  - max_tt_025C_1v80
+  - nom_ff_n40C_1v95
+  - min_ff_n40C_1v95
+  - max_ff_n40C_1v95
+# Detailed routing can cost up to about 1.5 ns of the typical-corner slack estimated
+# after global routing, so the resizer keeps that much margin.
+GRT_RESIZER_SETUP_SLACK_MARGIN: 1.5

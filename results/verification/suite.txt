@@ -1,0 +1,57 @@
+cocotb suite, COCOTB_RANDOM_SEED=12345 (pytest tests/ tb/test_runner.py; ACCEL_N=8 and 16 for the base builds)
+
+tests/test_model.py::test_layer_tiled_matches_numpy_reference[int8] PASSED
+tests/test_model.py::test_layer_tiled_matches_numpy_reference[ternary] PASSED
+tests/test_model.py::test_layer_int_matches_layer_tiled[int8] PASSED
+tests/test_model.py::test_layer_int_matches_layer_tiled[ternary] PASSED
+tests/test_model.py::test_layer_int_detects_overflow PASSED
+
+N=4 tb/test_runner.py::test_accel[int8-base]
+  max |acc| = 21233664 vs ACC_W=26 limit 33554431
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED
+
+N=4 tb/test_runner.py::test_accel[int8-perf]
+  max |acc| = 21233664 vs ACC_W=26 limit 33554431
+  TESTS=16 PASS=15 FAIL=0 SKIP=1
+  PASSED
+
+N=4 tb/test_runner.py::test_accel[int8-db]
+  max |acc| = 21233664 vs ACC_W=26 limit 33554431
+  TESTS=16 PASS=16 FAIL=0 SKIP=0
+  PASSED
+
+N=4 tb/test_runner.py::test_accel[ternary-base]
+  max |acc| = 165888 vs ACC_W=19 limit 262143
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED
+
+N=4 tb/test_runner.py::test_accel[ternary-perf]
+  max |acc| = 165888 vs ACC_W=19 limit 262143
+  TESTS=16 PASS=15 FAIL=0 SKIP=1
+  PASSED
+
+N=4 tb/test_runner.py::test_accel[ternary-db]
+  max |acc| = 165888 vs ACC_W=19 limit 262143
+  TESTS=16 PASS=16 FAIL=0 SKIP=0
+  PASSED
+
+N=8 tb/test_runner.py::test_accel[int8-base]
+  max |acc| = 21233664 vs ACC_W=26 limit 33554431
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED
+
+N=8 tb/test_runner.py::test_accel[ternary-base]
+  max |acc| = 165888 vs ACC_W=19 limit 262143
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED
+
+N=16 tb/test_runner.py::test_accel[int8-base]
+  max |acc| = 21233664 vs ACC_W=26 limit 33554431
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED
+
+N=16 tb/test_runner.py::test_accel[ternary-base]
+  max |acc| = 165888 vs ACC_W=19 limit 262143
+  TESTS=16 PASS=14 FAIL=0 SKIP=2
+  PASSED

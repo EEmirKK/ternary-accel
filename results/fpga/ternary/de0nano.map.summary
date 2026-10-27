@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Mon Oct 26 20:39:33 2026
+Quartus Prime Version : 25.1std.0 Build 1129 10/21/2025 SC Lite Edition
+Revision Name : de0nano
+Top-level Entity Name : de0nano_top
+Family : Cyclone IV E
+Total logic elements : 5,300
+    Total combinational functions : 3,971
+    Dedicated logic registers : 2,221
+Total registers : 2221
+Total pins : 13
+Total virtual pins : 0
+Total memory bits : 161,609
+Embedded Multiplier 9-bit elements : 6
+Total PLLs : 0
